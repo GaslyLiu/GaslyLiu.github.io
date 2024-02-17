@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://gaslyliu.github.io</id>
+    <title>Gasly.Liu</title>
+    <updated>2024-02-17T16:06:39.400Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://gaslyliu.github.io"/>
+    <link rel="self" href="https://gaslyliu.github.io/atom.xml"/>
+    <logo>https://gaslyliu.github.io/images/avatar.png</logo>
+    <icon>https://gaslyliu.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, Gasly.Liu</rights>
+    <entry>
+        <title type="html"><![CDATA[Tips for using GIT]]></title>
+        <id>https://gaslyliu.github.io/post/tips-for-using-git/</id>
+        <link href="https://gaslyliu.github.io/post/tips-for-using-git/">
+        </link>
+        <updated>2024-02-17T15:13:46.000Z</updated>
+        <content type="html"><![CDATA[<p>If you have uncommitted changes and you want to discard them, you can use the following command to discard all changes locally:</p>
+<pre><code>git reset --hard HEAD
+</code></pre>
+<p>This will return your working directory and staging area to the state of the<br>
+last commit. Then you can switch to the branch to pull and pull it.</p>
+<pre><code>git checkout feature-branch
+git pull origin feature-branch
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何生成一个FFT滤波器]]></title>
+        <id>https://gaslyliu.github.io/post/ru-he-sheng-cheng-yi-ge-fft-lu-bo-qi/</id>
+        <link href="https://gaslyliu.github.io/post/ru-he-sheng-cheng-yi-ge-fft-lu-bo-qi/">
+        </link>
+        <updated>2023-10-14T11:03:17.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p>TBD</p>
+<!-- more -->
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[示波器相关指标计算方式]]></title>
+        <id>https://gaslyliu.github.io/post/shi-bo-qi-xiang-guan-zhi-biao-ji-suan-fang-shi/</id>
+        <link href="https://gaslyliu.github.io/post/shi-bo-qi-xiang-guan-zhi-biao-ji-suan-fang-shi/">
+        </link>
+        <updated>2023-10-14T11:02:49.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<!-- more -->
+<p>ENOB</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gaze Estimation]]></title>
+        <id>https://gaslyliu.github.io/post/gaze-estimation/</id>
+        <link href="https://gaslyliu.github.io/post/gaze-estimation/">
+        </link>
+        <updated>2023-06-01T14:34:08.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="projject-feature-map">Projject Feature Map</h2>
+<pre><code>if __name__ == &quot;__main__&quot;:
+    coloredlogs.install(
+        datefmt='%d/%m %H:%M',
+        fmt='%(asctime)s %(levelname)s %(message)s',
+    )
+    parameter = parameter_init()
+
+    logging.info(&quot;Start GAZE_Model Build&quot;)
+    model = model_build.GAZE_Model(train=1)
+    model.build(input_shape=(32, 1, 36, 60))
+    model.call(tf.keras.layers.Input(shape=(1, 36, 60)))
+    model.summary()
+    logging.info(&quot;GAZE_Model Build Finish&quot;)
+
+    logging.info(&quot;Start UnityEye Dataset Init&quot;)
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Blog Website Release Note]]></title>
+        <id>https://gaslyliu.github.io/post/release_note/</id>
+        <link href="https://gaslyliu.github.io/post/release_note/">
+        </link>
+        <updated>2023-05-17T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://gaslyliu.github.io/post-images/1685123521249.png" alt="" loading="lazy"></figure>
+<p>修复 header name被menu遮挡的问题</p>
+]]></content>
+    </entry>
+</feed>
