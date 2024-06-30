@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://gaslyliu.github.io</id>
+    <title>Gasly.Liu</title>
+    <updated>2024-06-30T16:06:44.121Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://gaslyliu.github.io"/>
+    <link rel="self" href="https://gaslyliu.github.io/atom.xml"/>
+    <logo>https://gaslyliu.github.io/images/avatar.png</logo>
+    <icon>https://gaslyliu.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, Gasly.Liu</rights>
+    <entry>
+        <title type="html"><![CDATA[Daily Records [怎么还不更新啊（╬￣皿￣）]]]></title>
+        <id>https://gaslyliu.github.io/post/daily-records-zen-me-huan-bu-geng-xin-a-o/</id>
+        <link href="https://gaslyliu.github.io/post/daily-records-zen-me-huan-bu-geng-xin-a-o/">
+        </link>
+        <updated>2024-05-05T16:49:51.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="2024-07-01">2024-07-01</h2>
+<p>Everything seems to be hard.</p>
+<h2 id="2024-06-25">2024-06-25</h2>
+<p>连续三年了，每个6月份都是人生的十字路口。🖤</p>
+<h2 id="2024-06-23">2024-06-23</h2>
+<p>嘿嘿，搞定了。真是不错啊。🉑</p>
+<h2 id="2024-06-22">2024-06-22</h2>
+<p>不是，这玩意怎么插入日期做标签啊。。。很烦。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tips for python]]></title>
+        <id>https://gaslyliu.github.io/post/tips-for-python/</id>
+        <link href="https://gaslyliu.github.io/post/tips-for-python/">
+        </link>
+        <updated>2024-02-20T15:55:33.000Z</updated>
+        <summary type="html"><![CDATA[<pre><code>os.path.join
+</code></pre>
+<p>当后一个参数开头为&quot;/&quot;or&quot;\&quot;时，会忽略前一个参数<br>
+插值器</p>
+]]></summary>
+        <content type="html"><![CDATA[<pre><code>os.path.join
+</code></pre>
+<p>当后一个参数开头为&quot;/&quot;or&quot;\&quot;时，会忽略前一个参数<br>
+插值器</p>
+<!-- more -->
+<p>使用插值器时，有可能在数据中引入额外噪声。<br>
+最近在工作中，需要做一个降采样率的滤波器，通过满采样率滤波器频响截取实现。<br>
+使用满采样率滤波器频响生成插值器，通过插值器得到降低采样率后的（即带宽降低）的滤波器频响。<br>
+在对原始滤波器系数FFT看频响，其于原始满采样率滤波器一致。但是在补0（即提高频域分辨率）后再频响后半段出现了非常的的波动。<br>
+非常奇怪的现象😷，等什么时候有时间打开看一下原因。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tips for GIT]]></title>
+        <id>https://gaslyliu.github.io/post/tips-for-using-git/</id>
+        <link href="https://gaslyliu.github.io/post/tips-for-using-git/">
+        </link>
+        <updated>2024-02-17T15:13:46.000Z</updated>
+        <content type="html"><![CDATA[<p>If you have uncommitted changes and you want to discard them, you can use the following command to discard all changes locally:</p>
+<pre><code>git reset --hard HEAD
+</code></pre>
+<p>This will return your working directory and staging area to the state of the<br>
+last commit. Then you can switch to the branch to pull and pull it.</p>
+<pre><code>git checkout feature-branch
+git pull origin feature-branch
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to use Github page and Gridea to set up your own website?]]></title>
+        <id>https://gaslyliu.github.io/post/how-to-use-github-page-and-gridea-to-set-up-your-own-website/</id>
+        <link href="https://gaslyliu.github.io/post/how-to-use-github-page-and-gridea-to-set-up-your-own-website/">
+        </link>
+        <updated>2024-02-06T06:01:39.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to generate a fixed singal wave?(Sin,Square,tringle)]]></title>
+        <id>https://gaslyliu.github.io/post/how-to-generate-a-fixed-singal-wavesinsquaretringle/</id>
+        <link href="https://gaslyliu.github.io/post/how-to-generate-a-fixed-singal-wavesinsquaretringle/">
+        </link>
+        <updated>2024-02-06T06:00:21.000Z</updated>
+        <content type="html"><![CDATA[<p>TBD</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[高速采集架构概述]]></title>
+        <id>https://gaslyliu.github.io/post/gao-su-cai-ji-jia-gou-fen-xi/</id>
+        <link href="https://gaslyliu.github.io/post/gao-su-cai-ji-jia-gou-fen-xi/">
+        </link>
+        <updated>2023-11-24T23:43:49.000Z</updated>
+        <content type="html"><![CDATA[<p>当前单ADC的采集能力不足以覆盖面对高速、高保真的采集需求。因此，需要将多个ADC通过不同的方式将采集能力合并，得到远超单ADC能力的系统。通过在时域、频域交织产生的高速采集系统不可避免的附加上非单ADC的失真效应，因此，也需要面对不同类型的架构设计不同的校准算法</p>
+<h2 id="tis">TIS</h2>
+<p>Time Interleaving System 时域交织系统<br>
+通过多级的DeMUX将信号在时域上分为多路送入多个ADC中完成采保，而后按照ADC的采样顺序拼接各ADC输出数据得到原始信号。<br>
+此方式设计多ADC的</p>
+<h2 id="ati">ATI</h2>
+<p>ATI(Asynchronous Time Interleaving)异步时间交织采集。<br>
+通过预放将原始信号分为多路（以下对两路ATI交织做分析）。<br>
+两路ADC通过与系统时钟异步的采集时钟将信号分为高频和低频部分的’和频谱‘和‘差频谱’，在DPO中为通过两个时钟失相180度的两个75GS/s采样时钟将信号分为0～37.5G的‘和频谱’和‘差频谱’。<br>
+之后通过将‘和频谱’和‘差频谱’相加得到原始信号的低频部分，相减得到原始信号高频部分（为高频部分镜像混叠到奈奎斯特带宽内）。<br>
+后数字混频方式将‘高频部分’混叠到第二奈奎斯特带宽内。两者相加得到原始信号频谱即原始信号。<br>
+多数采集系统会在设计时将异步采样时钟频率设计到略高于目标带宽的两倍。因此在拼接得到原始信号后通过低通滤波器将带外频响去除。<br>
+此种架构在系统性能指标上有关于奈奎斯特频点对称的特性。实际对高频部分采样的系统为镜像后的低频性能。</p>
+<h2 id="dbi">DBI</h2>
+<p>eg:</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[示波器相关指标计算方式]]></title>
+        <id>https://gaslyliu.github.io/post/shi-bo-qi-xiang-guan-zhi-biao-ji-suan-fang-shi/</id>
+        <link href="https://gaslyliu.github.io/post/shi-bo-qi-xiang-guan-zhi-biao-ji-suan-fang-shi/">
+        </link>
+        <updated>2023-10-14T11:02:49.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<!-- more -->
+<p>ENOB</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gaze Estimation]]></title>
+        <id>https://gaslyliu.github.io/post/gaze-estimation/</id>
+        <link href="https://gaslyliu.github.io/post/gaze-estimation/">
+        </link>
+        <updated>2023-06-01T14:34:08.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="projject-feature-map">Projject Feature Map</h2>
+<pre><code>if __name__ == &quot;__main__&quot;:
+    coloredlogs.install(
+        datefmt='%d/%m %H:%M',
+        fmt='%(asctime)s %(levelname)s %(message)s',
+    )
+    parameter = parameter_init()
+
+    logging.info(&quot;Start GAZE_Model Build&quot;)
+    model = model_build.GAZE_Model(train=1)
+    model.build(input_shape=(32, 1, 36, 60))
+    model.call(tf.keras.layers.Input(shape=(1, 36, 60)))
+    model.summary()
+    logging.info(&quot;GAZE_Model Build Finish&quot;)
+
+    logging.info(&quot;Start UnityEye Dataset Init&quot;)
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Blog Website Release Note]]></title>
+        <id>https://gaslyliu.github.io/post/release_note/</id>
+        <link href="https://gaslyliu.github.io/post/release_note/">
+        </link>
+        <updated>2023-05-17T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://gaslyliu.github.io/post-images/1685123521249.png" alt="" loading="lazy"></figure>
+<h3 id="header-name被遮挡">header name被遮挡</h3>
+<p>修复 header name被menu遮挡的问题，menu的属性更改为后置</p>
+<h3 id="valine-error-code504">Valine error code504</h3>
+<p><code>Code 504: The app is archived, please restore in console before use.</code><br>
+突然发现网站评论框下面有一行上面的报错信息，是valine太久没有使用需要重新激活,需要范围leancloud控制台重新恢复一下账号<br>
+LeanCloud 控制台-<a href="https://www.leancloud.cn">https://www.leancloud.cn</a></p>
+]]></content>
+    </entry>
+</feed>
