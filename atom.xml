@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://gaslyliu.github.io</id>
+    <title>Gasly.Liu</title>
+    <updated>2024-07-28T09:52:19.969Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://gaslyliu.github.io"/>
+    <link rel="self" href="https://gaslyliu.github.io/atom.xml"/>
+    <logo>https://gaslyliu.github.io/images/avatar.png</logo>
+    <icon>https://gaslyliu.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, Gasly.Liu</rights>
+    <entry>
+        <title type="html"><![CDATA[Tips for python]]></title>
+        <id>https://gaslyliu.github.io/post/tips-for-python/</id>
+        <link href="https://gaslyliu.github.io/post/tips-for-python/">
+        </link>
+        <updated>2024-02-20T15:55:33.000Z</updated>
+        <summary type="html"><![CDATA[<pre><code>os.path.join
+</code></pre>
+<p>当后一个参数开头为&quot;/&quot;or&quot;\&quot;时，会忽略前一个参数<br>
+插值器</p>
+]]></summary>
+        <content type="html"><![CDATA[<pre><code>os.path.join
+</code></pre>
+<p>当后一个参数开头为&quot;/&quot;or&quot;\&quot;时，会忽略前一个参数<br>
+插值器</p>
+<!-- more -->
+<p>使用插值器时，有可能在数据中引入额外噪声。<br>
+最近在工作中，需要做一个降采样率的滤波器，通过满采样率滤波器频响截取实现。<br>
+使用满采样率滤波器频响生成插值器，通过插值器得到降低采样率后的（即带宽降低）的滤波器频响。<br>
+在对原始滤波器系数FFT看频响，其于原始满采样率滤波器一致。但是在补0（即提高频域分辨率）后再频响后半段出现了非常的的波动。<br>
+非常奇怪的现象😷，等什么时候有时间打开看一下原因。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tips for GIT]]></title>
+        <id>https://gaslyliu.github.io/post/tips-for-using-git/</id>
+        <link href="https://gaslyliu.github.io/post/tips-for-using-git/">
+        </link>
+        <updated>2024-02-17T15:13:46.000Z</updated>
+        <content type="html"><![CDATA[<p>If you have uncommitted changes and you want to discard them, you can use the following command to discard all changes locally:</p>
+<pre><code>git reset --hard HEAD
+</code></pre>
+<p>This will return your working directory and staging area to the state of the<br>
+last commit. Then you can switch to the branch to pull and pull it.</p>
+<pre><code>git checkout feature-branch
+git pull origin feature-branch
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to use Github page and Gridea to set up your own website?]]></title>
+        <id>https://gaslyliu.github.io/post/how-to-use-github-page-and-gridea-to-set-up-your-own-website/</id>
+        <link href="https://gaslyliu.github.io/post/how-to-use-github-page-and-gridea-to-set-up-your-own-website/">
+        </link>
+        <updated>2024-02-06T06:01:39.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Blog Website Release Note]]></title>
+        <id>https://gaslyliu.github.io/post/release_note/</id>
+        <link href="https://gaslyliu.github.io/post/release_note/">
+        </link>
+        <updated>2023-05-17T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://gaslyliu.github.io/post-images/1685123521249.png" alt="" loading="lazy"></figure>
+<h3 id="header-name被遮挡">header name被遮挡</h3>
+<p>修复 header name被menu遮挡的问题，menu的属性更改为后置</p>
+<h3 id="valine-error-code504">Valine error code504</h3>
+<p><code>Code 504: The app is archived, please restore in console before use.</code><br>
+突然发现网站评论框下面有一行上面的报错信息，是valine太久没有使用需要重新激活,需要范围leancloud控制台重新恢复一下账号<br>
+LeanCloud 控制台-<a href="https://www.leancloud.cn">https://www.leancloud.cn</a></p>
+]]></content>
+    </entry>
+</feed>
